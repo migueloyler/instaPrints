@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title></title>
+          <link rel="stylesheet prefetch" href="https://preview.codepad.co/css/normalize.min.css">
+          <script src=""></script>
+          <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+          <link rel="stylesheet prefetch" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+          
+          <style>
+              
+              .wrapper {
+                position: relative;
+                width: 320px;
+                margin: 50px auto;
+              }
+              
+              nav {
+                width: 100%;
+              }
+              
+              nav ul li {
+                display: inline-block;
+                list-style: none;
+                width: 160px;
+                text-align: center;
+                font-family: Helvetica, sans-serif;
+                border: 1px dashed rgba(255,255,255, 0);
+                color: #52015e95;
+                padding: 10px 0 10px 0;
+                margin: -1px -5px -1px -1px;
+                cursor: pointer;
+                transition: all .2s;
+              }
+              
+              nav ul li:hover {
+                background: rgba(255,255,255,.1);
+              }
+              
+              nav ul {
+                border: 1px solid #52015e47;
+                position: absolute;
+                width: 100%;
+                padding: 0;
+                z-index: 100;
+              }
+              
+              nav div {
+                position: absolute;
+                left: 0;
+                top: 16px;
+                background: #52015e95;
+                width: 162px;
+                height: 40px;
+                z-index:99;
+              }
+              
+              .active {
+                color: #fff;
+              }
+            
+            html {
+              height: 100%;
+
+              }
+              
+              body {
+
+              background: #d6249f;
+              
+              background: radial-gradient(circle at 66% 5%, #fffbd2 0%, #fffbce 5%, #ffc2bc 45%,#deb9d3 60%);
+              font-family: "Roboto", sans-serif;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;      
+              }
+            
+                 </style>
+    </head>
+    <body>
+      
+        <div class="wrapper">
+            <nav>
+              <div></div>
+              <ul>
+                <li data-dedata="0px" class="active">Home</li>
+                <li data-dedata="160px">Profile</li>
+              </ul>
+            </nav>
+        </div>
+        <script type="text/javascript">
+          $("nav ul li").click(function() {
+        var data = $(this).data("dedata");
+        
+        $("nav div").stop().animate({marginLeft:data}, 500, "easeInOutExpo");
+        
+        $(this).addClass("active");
+        
+        $("nav ul li").not(this).removeClass("active");
+      });
+      </script>
+       </body>
+</html>
