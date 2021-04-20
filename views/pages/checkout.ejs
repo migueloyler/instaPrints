@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src = checkout.js defer></script>
+<link rel="stylesheet" href="checkout.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout Card</title>
+</head>
+<body>
+
+<h2>Checkout Form</h2>
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form id="validate" action="/process-checkout" method="GET">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fullName"></i> Full Name</label>
+                        <p class="alert" id ="fullNameAlert">Please enter a valid name</p>
+                        <input type="text" id="fname" name="fullname" class="billingaddress" placeholder="First Last" required>
+                        <label for="email"><i class="email"></i> Email</label>
+                        <p class="alert" id ="emailAlert">Please enter a valid email</p>
+                        <input type="text" id="email" name="email" placeholder="example@email.com" class="billingaddress" required>
+                        <label for="address"><i class="cardAdress"></i> Address</label>
+                        <p class="alert" id="addressAlert">Please enter a valid address</p>
+                        <input type="text" id="adr" name="address" placeholder="123 Pleasant Street" class="billingaddress" required>
+                        <label for="city"><i class="city"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="Amherst"  class="billingaddress" required>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="Massachusetts" required>
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="12345" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="cname">Name on Card</label>
+                        <p class="alert" id="cardNameAlert">please enter a valid name</p>
+                        <input type="text" id="cname" name="cardname" placeholder="First Last" required>
+                        <label for="ccnum">Credit card number</label>
+                        <p class="alert" id="ccAlert">Please enter a valid card number</p>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1234-1234-1234-1234" required>
+                        <h3> Expiration Date</h3>
+                        <p class="alert" id="cardInfoAlert">Please enter valid card information</p>
+                        <label for="expMonth">Month</label>
+                        <input type="text" id="expMonth" name="expmonth" placeholder="03" required>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expYear">Year</label>
+                                <input type="text" id="expYear" name="expyear" placeholder="2021" required>
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="sameAddress"> Shipping address same as billing
+                </label>
+                <input type="submit" id="submitPayment" value="Submit Payment" class="btn">
+            </form>
+        </div>
+    </div>
+    <div class="col-25">
+        <div class="container">
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+            <div class="zoom">
+                <img id="imgZoom" onmousemove="zoomIn(event)" onmouseout="zoomOut()" src="https://thumbs.dreamstime.com/b/alcohol-ink-texture-fluid-abstract-background-art-design-131606737.jpg"  alt="TempImg">
+                <div id="overlay" onmousemove="zoomIn(event)"></div>
+            </div>
+            <p><a href="#">Tyler the Creator Print</a> <span class="price">$100</span></p>
+
+            <hr>
+            <p>Total <span><b>$12600</b></span></p>
+        </div>
+    </div>
+</div>

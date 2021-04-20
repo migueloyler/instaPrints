@@ -1,0 +1,165 @@
+body{
+    background: #d6249f;
+    height: 100%;
+    background: radial-gradient(circle at 66% 5%, #fffbd2 0%, #fffbce 5%, #ffc2bc 45%, #deb9d3 60%);
+    font-family: "Roboto", san-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* img {
+    display: block;
+} */
+
+
+
+
+/* figure img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+} */
+#profpic{
+    border-radius: 50%;
+    width:70%;
+    height: 100%;    
+    position:relative;
+    
+    
+}
+.button{
+    position:relative;
+    width:100%;
+    top: 50px;
+    background-color: #FFFF;
+}
+.col{
+    position:relative;
+    float:left;
+    flex:33.3%;
+}
+
+.displayinfo{
+    font-size: 20px;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
+@supports (display: grid){
+    .info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+}
+.button{
+    
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    /* color: #fff; */
+    cursor: pointer;
+}
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 80%;
+    -webkit-filter: brightness(100%);
+    /* border-radius: 50%; */
+}
+.gallery-image:hover {
+    -webkit-filter: brightness(65%);
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.gallery-item-likes {
+    margin-right: 2.2rem;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+a:link
+{
+   color: rgb(104, 103, 103);
+   text-decoration: none;
+}
+a:hover
+{
+   text-decoration: underline;
+}
+a:active
+{
+    text-decoration: none;
+}
+
+.container {
+    max-width: 93.5rem;
+    margin: 0 auto;
+    margin-top: 5;
+    padding: 0 2rem;
+}
+
+body {
+    font-weight: 10;
+}
+
+.caption {
+    margin-top: 1rem;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+.profile {
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+.price {
+    font-size: 1.8em;
+    font-family: 'Open Sans', sans-serif;
+}
+@supports (display: grid){
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        /* grid-gap: 2rem; */
+    }
+}

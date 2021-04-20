@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>
+        Log In
+      </title>
+      <meta charset="UTF-8">
+      <link href="login.css" rel="stylesheet">
+      <script src = "login.js" defer></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class="login-page">
+            <div class="form">
+              <form class="login-form" action="/signin" method="GET">
+                <input id= "username" type="text" placeholder="username" name = "username"/>
+                <input id="password" type="password" placeholder="password" name = "password"/>
+                <button type="submit" id ="signin">sign in</button>
+                <p class="message">Not registered? <a href="signup">Create an account</a></p>
+              </form>
+            </div>
+          </div>
+    </body>
+</html>

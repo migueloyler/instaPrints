@@ -1,0 +1,162 @@
+body {
+    background: #d6249f;
+    height: 100%;
+    background: radial-gradient(circle at 66% 5%, #fffbd2 0%, #fffbce 5%, #ffc2bc 45%,#deb9d3 60%);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img{
+   position : relative;
+   height: auto;
+   width: 100%;
+   max-height:120px;
+   max-width: 160px;
+}
+
+#overlay {
+   border: 1px solid black;
+   width: 100px;
+   height: 100px;
+   display: inline-block;
+   background-image: url("https://thumbs.dreamstime.com/b/alcohol-ink-texture-fluid-abstract-background-art-design-131606737.jpg");
+   background-repeat: no-repeat;
+}
+
+sum
+
+h2{
+   text-align:center;
+   background-color: white;
+   border-radius: 15px;
+   width: 200px;
+   font-size : 15pt;
+   font-family: "Roboto", sans-serif;
+   position: relative;
+   float: start;
+   margin-left : auto;
+   margin-right : auto;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+.error {
+   color: red;
+   border-color: red;
+}
+
+.row {
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   margin: 0 -10px;
+}
+
+.col-25 {
+   -ms-flex: 25%;
+   flex: 25%;
+}
+
+.col-50 {
+   -ms-flex: 50%;
+   flex: 50%;
+}
+
+.col-75 {
+   -ms-flex: 75%;
+   flex: 75%;
+}
+
+.col-25,.col-50,.col-75 {
+   padding: 0 16px;
+}
+
+.container {
+   background-color: #FFFFFF;
+   padding: 3px 18px 13px 18px;
+   border: 1px solid lightgrey;
+   border-radius: 3px;
+   box-shadow: 0 0 2rem 0 rgba(168, 180, 194, 0.37);
+}
+
+
+input[type=text] {
+   width: 100%;
+   margin-bottom: 20px;
+   padding: 12px;
+   border: 1px solid rgb(89, 164, 214);
+   border-radius: 1px;
+}
+
+label {
+   margin-bottom: 10px;
+   display: block;
+}
+
+.icon-container {
+   margin-bottom: 20px;
+   padding: 7px 0;
+   font-size: 24px;
+}
+
+.btn {
+   background-color: #01BAEF;
+   transition : 0.5s;
+   color: #52015e;
+   padding: 12px;
+   margin: 10px 0;
+   border: 0;
+   width: 100%;
+   border-radius: 25px;
+   cursor: pointer;
+   font-size: 17px;
+   box-shadow: 0 0 1rem 0 rgba(99, 123, 150, 0.329);
+   background-image : linear-gradient(to right, #fffbd4 0%, #f6f2cb 5%, #ffa59d 45%,#d28bbb 60%,#abb6d7 90%)
+
+}
+
+.btn:hover, .btn:active, .btn:focus {
+   background-color: #0CBABA;
+   background-position: right center;
+}
+
+a {
+   color: greenyellow;
+}
+
+hr {
+   border: 1px solid lightgrey;
+}
+
+span.price {
+   float: right;
+   color: grey;
+}
+
+
+* {box-sizing: border-box;}
+
+.zoom {
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+.alert {
+   color:red;
+   font-size: 10pt
+}
+
+
+
+@media (max-width: 800px) {
+   .row {
+       flex-direction: column-reverse;
+   }
+   .col-25 {
+       margin-bottom: 20px;
+   }
+}

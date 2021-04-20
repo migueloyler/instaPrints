@@ -1,0 +1,289 @@
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.nav-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fce043;
+    background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);    
+    margin: 0 auto;
+    padding: 9px;
+}
+.home-button {
+    display: flex;
+    margin-left: 2rem;
+    font-size: 40px;
+    color: white;
+    align-items: center;
+    margin-left: 2rem;
+}
+.logo{
+    font-size: 30px;
+    font-family: "Gill Sans", sans-serif;
+    margin-left: 1rem;
+    color: white;
+    font-weight: 600;
+}
+.right-side {
+    font-size: 17px;
+    margin-right: 2rem;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(70, 70, 70);
+}
+.profile-icon-image {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+
+/* .profile-icon-image:hover {
+
+} */
+.right-side-buttons {
+    margin-right: 2rem;
+    font-family: "Gill Sans", sans-serif;
+    
+}
+.right-side-buttons a {
+    font-family: "Roboto", sans-serif;
+    /* text-transform: uppercase; */
+    outline: 0;
+    background-image: linear-gradient(to right,  #ff6f62 45%,#e779c4 60%,#abb6d7 90%);
+    color: #52015e;
+    font-size: 16px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /* text-decoration: none; */
+    border-radius: 15px;
+    margin: 0.5rem;
+    width: 9rem;
+    font-size: medium;
+    /* transition: all 0.6s ease;
+    background-color: #fc9842;
+    background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%); 
+    text-transform: uppercase;
+    font-family: "Gill Sans", sans-serif; */
+}
+.right-side-buttons a:hover {
+    background-position: right center;
+}
+.right-side-buttons a:focus {
+    text-decoration: white;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+}
+
+.arrow {
+    border: solid rgb(107, 107, 107);    ;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 0.5rem;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(197, 197, 197);}
+
+.main-text {
+    font-size: 40px;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(107, 107, 107);
+    font-weight: 600;  
+    text-align: center;  
+    margin-top: 4rem;
+}
+
+
+
+div.scrollmenu {
+    /* background-color: #333; */
+    overflow: auto;
+    white-space: nowrap;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+  
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 0.5rem;
+    width: 9rem;
+    font-size: medium;
+    transition: all 0.6s ease;
+    /* background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%); */
+    background-color: #ffac81;
+    background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);   
+    text-transform: uppercase;
+    font-family: "Gill Sans", sans-serif;
+}
+
+div.scrollmenu a:hover {
+    /* border:1px solid grey;  */
+    background-image: none;
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 225px;
+    height: 225px;
+    overflow: hidden;
+}
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* object-fit: cover; */
+    
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: white;
+}
+
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 75%; */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+a:link
+{
+   color: white;
+   text-decoration: none;
+}
+
+a:active
+{
+    text-decoration: none;
+}
+
+.gallery-item-text:hover{
+    text-decoration: underline;
+}
+.profile-image {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* margin-right: 0.5rem; */
+}
+.profile-picture {
+    margin-right: 0.5rem;
+}
+.profile-name {
+    margin-right: 2.2rem;
+}
+
+.gallery-container {
+    max-width: 80%;
+    margin: 0 auto;
+    /* margin-top: 500px; */
+    padding: 0 2rem;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #FFF0F5;
+    /* background: radial-gradient(circle at 66% 5%, #fffbd2 0%, #fffbce 5%, #ffc2bc 45%,#deb9d3 60%); */
+}
+
+@supports (display: grid){
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        /* grid-gap: 2rem; */
+    }
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .profile-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+  
+ 
+  .gallery-item-fade {
+    position: relative;
+    /* flex: 1 0 22rem; */
+    margin: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+}
